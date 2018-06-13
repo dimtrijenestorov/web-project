@@ -1,2 +1,2 @@
-# web-projekat
+# web-project
 Taxi servis app separated in backend (WebApi 2) and frontend (Angular 6)
