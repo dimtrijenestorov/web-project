@@ -30,8 +30,12 @@ namespace TaxiService.Entities.Models
         
         //Uber, client props left out becouse they will be referenced from User table
 
+        [Required]
         public virtual float Total { get; set; }
-        public virtual string Comment { get; set; }
+        [Required]
+        public virtual Guid CommentId { get; set; }
+        [ForeignKey("CommentId")]
+        public virtual Comment Comment { get; set; }
         public virtual string State { get; set; }
 
         // State-machine
