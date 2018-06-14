@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiService.Web", "TaxiService.Web\TaxiService.Web.csproj", "{90F3C6D3-A92A-4EF6-ADB7-80E493B137B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiService.Entities", "TaxiService.Entities\TaxiService.Entities.csproj", "{A958F4E4-B957-453A-BAC2-835BDAFD8718}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90F3C6D3-A92A-4EF6-ADB7-80E493B137B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F3C6D3-A92A-4EF6-ADB7-80E493B137B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F3C6D3-A92A-4EF6-ADB7-80E493B137B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F3C6D3-A92A-4EF6-ADB7-80E493B137B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A958F4E4-B957-453A-BAC2-835BDAFD8718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A958F4E4-B957-453A-BAC2-835BDAFD8718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A958F4E4-B957-453A-BAC2-835BDAFD8718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A958F4E4-B957-453A-BAC2-835BDAFD8718}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFA61C53-770B-4513-8515-E3329F3CBF32}
+	EndGlobalSection
+EndGlobal
