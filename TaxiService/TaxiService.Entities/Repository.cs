@@ -13,6 +13,12 @@ namespace TaxiService.Entities
         protected readonly DbContext _dbContext;
         private DbSet<T> _entities;
 
+        public Repository(DbContext context)
+        {
+            _dbContext = context;
+            _entities = _dbContext.Set<T>();
+        }
+
         public T GetById(V id)
         {
             T tEntity = null;

@@ -12,16 +12,12 @@ namespace TaxiService.Entities.Models
         [Key]
         public virtual Guid Id { get; set; }
         [Required]
-        [Display(Name = "Year of production")]
         public virtual int YearOfProduction { get; set; }
         [Required]
-        [Display(Name = "Registration number")]
         public virtual string RegistrationNumber { get; set; }
         [Required]
-        [Display(Name = "Taxi number")]
         public virtual string TaxiNumber { get; set; }
         [Required]
-        [Display(Name = "Car type")]
         public virtual string CarType { get; set; }
     }
 }

@@ -19,10 +19,6 @@ namespace TaxiService.Entities.Models
         public virtual string City { get; set; }
         [Required]
         public virtual int PostNumber { get; set; }
-
-        public override string ToString()
-        {
-            return $"{StreetName} {StreetNumber.ToString()}, {City} {PostNumber.ToString()}";
-        }
+        
     }
 }

@@ -1,0 +1,17 @@
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\TaxiService.MSSQLRepository.dll.config
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\TaxiService.MSSQLRepository.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\TaxiService.MSSQLRepository.pdb
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\EntityFramework.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\EntityFramework.SqlServer.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\TaxiService.Entities.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\TaxiService.Entities.pdb
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\TaxiService.Entities.dll.config
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\EntityFramework.xml
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\bin\Debug\EntityFramework.SqlServer.xml
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\obj\Debug\TaxiService.MSSQLRepository.csprojResolveAssemblyReference.cache
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\obj\Debug\TaxiService.MSSQLRepository.csproj.CoreCompileInputs.cache
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\obj\Debug\TaxiService.MSSQLRepository.csproj.CopyComplete
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\obj\Debug\TaxiService.MSSQLRepository.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\obj\Debug\TaxiService.MSSQLRepository.pdb
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\obj\Debug\TaxiService.MSSQLRepository.Migrations.InitialCreate.resources
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.MSSQLRepository\obj\Debug\TaxiService.MSSQLRepository.csproj.GenerateResource.cache

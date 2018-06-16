@@ -47,7 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IRepository.cs" />
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Dispetcher.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Ride.cs" />
     <Compile Include="Models\RideStates\AcceptedState.cs" />
@@ -58,8 +63,10 @@
     <Compile Include="Models\RideStates\RideState.cs" />
     <Compile Include="Models\RideStates\SuccessfulState.cs" />
     <Compile Include="Models\RideStates\UnsuccessfulState.cs" />
+    <Compile Include="Models\UberDriver.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="Shared\EnumCarType.cs" />
     <Compile Include="Shared\EnumRole.cs" />
     <Compile Include="Shared\EnumSex.cs" />

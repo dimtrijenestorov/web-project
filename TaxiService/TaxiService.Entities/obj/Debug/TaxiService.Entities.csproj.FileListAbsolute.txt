@@ -1,0 +1,12 @@
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\bin\Debug\TaxiService.Entities.dll.config
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\bin\Debug\TaxiService.Entities.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\bin\Debug\TaxiService.Entities.pdb
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\bin\Debug\EntityFramework.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\bin\Debug\EntityFramework.xml
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\obj\Debug\TaxiService.Entities.csprojResolveAssemblyReference.cache
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\obj\Debug\TaxiService.Entities.csproj.CoreCompileInputs.cache
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\obj\Debug\TaxiService.Entities.csproj.CopyComplete
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\obj\Debug\TaxiService.Entities.dll
+E:\FTN\WEB\Projekat\web-project\TaxiService\TaxiService.Entities\obj\Debug\TaxiService.Entities.pdb
