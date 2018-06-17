@@ -20,5 +20,11 @@ namespace TaxiService.Entities.Models
         public virtual Guid AddressId { get; set; }
         [ForeignKey("AddressId")]
         public virtual Address Address { get; set; }
+        [InverseProperty("UbersLocation")]
+        public virtual ICollection<UberDriver> UbersLocation { get; set; }
+        [InverseProperty("ArivalSpot")]
+        public virtual ICollection<Ride> RideArivalSpot { get; set; }
+        [InverseProperty("DestinationSpot")]
+        public virtual ICollection<Ride> RideDestinationSpot { get; set; }
     }
 }

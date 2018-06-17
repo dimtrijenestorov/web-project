@@ -17,5 +17,6 @@ namespace TaxiService.MSSQLRepository.ModelRepositories
         }
 
         public UserRepository(DatabaseContext context) : base(context) { }
+        
     }
 }

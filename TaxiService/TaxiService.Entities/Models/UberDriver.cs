@@ -10,10 +10,9 @@ namespace TaxiService.Entities.Models
 {
     public class UberDriver : User
     {
-        [Required]
-        public virtual Guid LocationId { get; set; }
-        [ForeignKey("LocationId")]
-        public virtual Location Location { get; set; }
+        public virtual Guid UbersLocationId { get; set; }
+        [ForeignKey("UbersLocationId")]
+        public virtual Location UbersLocation { get; set; }
         [Required]
         public virtual Guid CarId { get; set; }
         [ForeignKey("CarId")]

@@ -8,5 +8,6 @@ namespace TaxiService.Entities.Models
 {
     public class Customer : User
     {
+        public virtual ICollection<Comment> UsersComments { get; set; }
     }
 }

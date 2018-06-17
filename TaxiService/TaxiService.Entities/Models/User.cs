@@ -30,5 +30,13 @@ namespace TaxiService.Entities.Models
         public virtual Guid RideId { get; set; }
         [ForeignKey("RideId")]
         public virtual Ride Ride { get; set; }
+        public virtual bool Banned { get; set; }
+
+        [InverseProperty("Customer")]
+        public virtual ICollection<Ride> CustomerRides { get; set; }
+        [InverseProperty("Dispetcher")]
+        public virtual ICollection<Ride> DispetcherRides { get; set; }
+        [InverseProperty("UberDriver")]
+        public virtual ICollection<Ride> UberDriverRides { get; set; }
     }
 }

@@ -22,21 +22,7 @@ namespace TaxiService.Entities
         public T GetById(V id)
         {
             T tEntity = null;
-            if (id != null)
-            {
-                try
-                {
-                    tEntity = _entities.Find(id);
-                }
-                catch (InvalidOperationException)
-                {
-                    throw;
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-            }
+            tEntity = _entities.Find(id);
             return tEntity;
         }
 
@@ -48,40 +34,19 @@ namespace TaxiService.Entities
         public IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
             IEnumerable<T> tEntityEnumerable = new List<T>();
-            if (predicate != null)
-            {
-                tEntityEnumerable = _entities.Where(predicate).ToList();
-            }
+            tEntityEnumerable = _entities.Where(predicate).ToList();
             return tEntityEnumerable;
         }
 
         public T Add(T entity)
         {
-            if (entity != null)
-            {
-                if (_entities.FirstOrDefault(x => x.Equals(entity)) == null)
-                {
-                    _entities.Add(entity);
-                    return entity;
-                }
-            }
+            _entities.Add(entity);
             return entity;
-        }
-
-        public void AddRange(IEnumerable<T> entities)
-        {
-            if (entities != null)
-            {
-                _entities.AddRange(entities);
-            }
         }
 
         public void Remove(T entity)
         {
-            if (entity != null)
-            {
-                _entities.Remove(entity);
-            }
+            _entities.Remove(entity);
         }
     }
 }

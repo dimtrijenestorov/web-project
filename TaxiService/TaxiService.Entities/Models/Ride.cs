@@ -34,9 +34,15 @@ namespace TaxiService.Entities.Models
         public virtual Location DestinationSpot { get; set; }
         [Required]
         public virtual string CarType { get; set; }
-        
-        //Uber, client props left out becouse they will be referenced from User table
-
+        public virtual string CustomerId { get; set; }
+        [ForeignKey("CustomerId")]
+        public virtual Customer Customer { get; set; }
+        public virtual string DispetcherId { get; set; }
+        [ForeignKey("DispetcherId")]
+        public virtual Dispetcher Dispetcher { get; set; }
+        public virtual string UberDriverId { get; set; }
+        [ForeignKey("UberDriverId")]
+        public virtual UberDriver UberDriver { get; set; }
         public virtual float Total { get; set; }
         public virtual Guid CommentId { get; set; }
         [ForeignKey("CommentId")]

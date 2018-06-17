@@ -26,9 +26,7 @@ namespace TaxiService.MSSQLRepository
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
 
         {
-
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-
         }
     }
 }
