@@ -33,12 +33,12 @@ namespace TaxiService.MSSQLRepository.UnitOfWork
 
         public int Complete()
         {
-            throw new NotImplementedException();
+            return _dbContext.SaveChanges();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _dbContext.Dispose();
         }
     }
 }

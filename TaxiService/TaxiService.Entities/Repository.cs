@@ -44,6 +44,11 @@ namespace TaxiService.Entities
             return entity;
         }
 
+        public void AddRange(IEnumerable<T> entities)
+        {
+            _entities.AddRange(entities);
+        }
+
         public void Remove(T entity)
         {
             _entities.Remove(entity);

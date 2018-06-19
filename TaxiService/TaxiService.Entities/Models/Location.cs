@@ -10,6 +10,13 @@ namespace TaxiService.Entities.Models
 {
     public class Location
     {
+        public Location()
+        {
+            UbersLocation = new HashSet<UberDriver>();
+            RideArivalSpot = new HashSet<Ride>();
+            RideDestinationSpot = new HashSet<Ride>();
+        }
+
         [Key]
         public Guid Id { get; set; }
         [Required]

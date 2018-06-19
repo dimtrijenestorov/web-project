@@ -1,0 +1,26 @@
+<dispetchers>
+  <dispetcher banned="false">
+    <username>admin1</username>
+    <password>admin</password>
+    <email>admin1@uns.ac.rs</email>
+    <role>ADMIN</role>
+  </dispetcher>
+  <dispetcher banned="false">
+    <username>admin2</username>
+    <password>admin</password>
+    <email>admin2@uns.ac.rs</email>
+    <role>ADMIN</role>
+  </dispetcher>
+  <dispetcher banned="false">
+    <username>admin3</username>
+    <password>admin</password>
+    <email>admin3@uns.ac.rs</email>
+    <role>ADMIN</role>
+  </dispetcher>
+  <dispetcher banned="false">
+    <username>admin4</username>
+    <password>admin</password>
+    <email>admin4@uns.ac.rs</email>
+    <role>ADMIN</role>
+  </dispetcher>
+</dispetchers>

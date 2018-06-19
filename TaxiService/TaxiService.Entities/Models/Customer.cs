@@ -8,6 +8,11 @@ namespace TaxiService.Entities.Models
 {
     public class Customer : User
     {
+        public Customer()
+        {
+            UsersComments = new HashSet<Comment>();
+        }
+
         public virtual ICollection<Comment> UsersComments { get; set; }
     }
 }

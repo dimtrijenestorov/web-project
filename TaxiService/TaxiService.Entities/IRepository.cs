@@ -14,6 +14,7 @@ namespace TaxiService.Entities
         IEnumerable<T> Find(Expression<Func<T, bool>> predicate);
 
         T Add(T entity);
+        void AddRange(IEnumerable<T> entities);
 
         void Remove(T entity);
     }
