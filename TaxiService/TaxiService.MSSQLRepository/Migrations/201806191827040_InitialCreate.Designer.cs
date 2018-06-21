@@ -13,7 +13,7 @@ namespace TaxiService.MSSQLRepository.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201806190032185_InitialCreate"; }
+            get { return "201806191827040_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

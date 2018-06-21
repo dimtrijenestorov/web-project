@@ -12,26 +12,26 @@ namespace TaxiService.Entities.Models
     {
         public Location()
         {
-            UbersLocation = new HashSet<UberDriver>();
-            RideArivalSpot = new HashSet<Ride>();
-            RideDestinationSpot = new HashSet<Ride>();
+            UbersOnLocation = new HashSet<UberDriver>();
+            RidesOnArivalSpot = new HashSet<Ride>();
+            RidesOnDestinationSpot = new HashSet<Ride>();
         }
 
         [Key]
         public Guid Id { get; set; }
         [Required]
-        public virtual float X { get; set; }
+        public virtual double X { get; set; }
         [Required]
-        public virtual float Y { get; set; }
+        public virtual double Y { get; set; }
         [Required]
         public virtual Guid AddressId { get; set; }
         [ForeignKey("AddressId")]
         public virtual Address Address { get; set; }
         [InverseProperty("UbersLocation")]
-        public virtual ICollection<UberDriver> UbersLocation { get; set; }
+        public virtual ICollection<UberDriver> UbersOnLocation { get; set; }
         [InverseProperty("ArivalSpot")]
-        public virtual ICollection<Ride> RideArivalSpot { get; set; }
+        public virtual ICollection<Ride> RidesOnArivalSpot { get; set; }
         [InverseProperty("DestinationSpot")]
-        public virtual ICollection<Ride> RideDestinationSpot { get; set; }
+        public virtual ICollection<Ride> RidesOnDestinationSpot { get; set; }
     }
 }

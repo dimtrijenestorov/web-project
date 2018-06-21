@@ -18,7 +18,7 @@ namespace TaxiService.Entities.Models
         [Required]
         public virtual string City { get; set; }
         [Required]
-        public virtual int PostNumber { get; set; }
+        public virtual int PostalNumber { get; set; }
         
     }
 }

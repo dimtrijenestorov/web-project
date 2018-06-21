@@ -22,7 +22,7 @@ namespace TaxiService.Entities.Models
         }
 
         [Key]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
         [Required]
         [Column(TypeName = "datetime2")]
         public virtual DateTime Timestamp { get; set; }

@@ -17,6 +17,7 @@ namespace TaxiService.Entities.Models
             CustomerRides = new HashSet<Ride>();
             DispetcherRides = new HashSet<Ride>();
             UberDriverRides = new HashSet<Ride>();
+            UsersComments = new HashSet<Comment>();
         }
 
         [Key]
@@ -32,7 +33,7 @@ namespace TaxiService.Entities.Models
         public virtual string EMail { get; set; }
         [Required]
         public virtual string Role { get; set; }
-        public virtual Guid RideId { get; set; }
+        public virtual string RideId { get; set; }
         [ForeignKey("RideId")]
         public virtual Ride Ride { get; set; }
         [Required]
@@ -44,5 +45,6 @@ namespace TaxiService.Entities.Models
         public virtual ICollection<Ride> DispetcherRides { get; set; }
         [InverseProperty("UberDriver")]
         public virtual ICollection<Ride> UberDriverRides { get; set; }
+        public virtual ICollection<Comment> UsersComments { get; set; }
     }
 }

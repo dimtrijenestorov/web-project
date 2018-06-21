@@ -46,7 +46,7 @@ namespace TaxiService.MSSQLRepository.Migrations
                         PhoneNumber = c.String(),
                         EMail = c.String(nullable: false),
                         Role = c.String(nullable: false),
-                        RideId = c.Guid(nullable: false),
+                        RideId = c.String(maxLength: 128),
                         Banned = c.Boolean(nullable: false),
                         UbersLocationId = c.Guid(),
                         CarId = c.Guid(),
@@ -62,7 +62,7 @@ namespace TaxiService.MSSQLRepository.Migrations
                 "dbo.Rides",
                 c => new
                     {
-                        Id = c.Guid(nullable: false),
+                        Id = c.String(nullable: false, maxLength: 128),
                         Timestamp = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
                         ArivalId = c.Guid(nullable: false),
                         DestinationId = c.Guid(nullable: false),
@@ -103,7 +103,7 @@ namespace TaxiService.MSSQLRepository.Migrations
                 "dbo.Comments",
                 c => new
                     {
-                        Id = c.Guid(nullable: false),
+                        Id = c.String(nullable: false, maxLength: 128),
                         Timestamp = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
                         Content = c.String(nullable: false),
                         Quality = c.Int(nullable: false),

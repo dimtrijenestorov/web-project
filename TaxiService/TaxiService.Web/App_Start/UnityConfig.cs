@@ -1,6 +1,14 @@
+using AutoMapper;
 using System;
-
+using System.Data.Entity;
+using TaxiService.MSSQLRepository;
+using TaxiService.MSSQLRepository.ModelRepositories;
+using TaxiService.MSSQLRepository.ModelRepositoryInterfaces;
+using TaxiService.MSSQLRepository.UnitOfWork;
+using TaxiService.Web.App_Start.ProfileMapings;
 using Unity;
+using Unity.Injection;
+using Unity.Lifetime;
 
 namespace TaxiService.Web
 {
@@ -42,6 +50,28 @@ namespace TaxiService.Web
 
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
+
+            container.RegisterType<DbContext, DatabaseContext>(new HierarchicalLifetimeManager());
+            container.RegisterType<IUnitOfWork, UnitOfWork>();
+
+            container.RegisterType<IUserRepository, UserRepository>();
+            container.RegisterType<IRideRepository, RideRepository>();
+            container.RegisterType<ILocationRepositrory, LocationRepository>();
+            container.RegisterType<IAddressRepository, AddressRepository>();
+            container.RegisterType<ICommentRepository, CommentRepository>();
+            container.RegisterType<ICarRepository, CarRepository>();
+
+            MapperConfiguration config = new MapperConfiguration(c =>
+            {
+                c.AddProfile<MapUserProfile>();
+                c.AddProfile<MapCommentProfile>();
+                c.AddProfile<MapLocationProfile>();
+                c.AddProfile<MapRideProfile>();
+                c.AddProfile<MapAddressProfile>();
+                c.AddProfile<MapCarProfile>();
+            });
+
+            container.RegisterType<IMapper, Mapper>(new InjectionConstructor(config));
         }
     }
 }

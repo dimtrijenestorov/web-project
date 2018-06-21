@@ -11,7 +11,7 @@ namespace TaxiService.Entities.Models
     public class Comment
     {
         [Key, ForeignKey("Ride")]
-        public virtual Guid Id { get; set; }
+        public virtual string Id { get; set; }
         public virtual Ride Ride { get; set; }
         [Required]
         [Column(TypeName = "datetime2")]
